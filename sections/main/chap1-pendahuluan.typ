@@ -31,11 +31,11 @@ Dapat digunakan sebagai bahan pertimbangan, evaluasi, serta masukan ilmiah dalam
 
 === Bagi Peneliti (Mahasiswa)
 
-Sebagai sarana untuk mengaplikasikan ilmu statistika yang telah dipelajari di bangku perkuliahan, khususnya mengenai konsep Statistik Deskriptif, Distribusi Frekuensi, dan analisis Regresi Linear Non-Linear (Parabola) pada kasus nyata di dunia industri. Selain itu, penelitian ini juga bermanfaat untuk melatih kemampuan berpikir kritis dalam menganalisis serta menginterpretasikan data riil lapangan, serta memahami tantangan nyata dalam implementasi metode kuantitatif untuk pengambilan keputusan bisnis #cite(<s7>).
+Sebagai sarana untuk mengaplikasikan ilmu statistika yang telah dipelajari di bangku perkuliahan, khususnya mengenai konsep Statistik Deskriptif, Distribusi Frekuensi, dan analisis Regresi Linear Non-Linear (Parabola) pada kasus nyata di dunia industri. Selain itu, penelitian ini juga bermanfaat untuk melatih kemampuan berpikir kritis dalam menganalisis serta menginterpretasikan data riil lapangan, serta memahami tantangan nyata dalam implementasi metode kuantitatif untuk pengambilan keputusan bisnis #cite(<s6>).
 
 === Bagi Akademisi / Peneliti Selanjutnya
 
-Dapat dijadikan sebagai referensi tambahan atau studi komparatif bagi mahasiswa lainnya yang ingin melakukan penelitian sejenis di bidang _forecasting_ (peramalan) time series, maupun sebagai bahan rujukan untuk mengembangkan prediksi yang lebih kompleks (misalnya dengan menambahkan variabel eksternal seperti PDRB, jumlah penduduk, atau indeks kemakmuran) di masa yang akan datang #cite(<s8>).
+Dapat dijadikan sebagai referensi tambahan atau studi komparatif bagi mahasiswa lainnya yang ingin melakukan penelitian sejenis di bidang _forecasting_ (peramalan) time series, maupun sebagai bahan rujukan untuk mengembangkan prediksi yang lebih kompleks (misalnya dengan menambahkan variabel eksternal seperti PDRB, jumlah penduduk, atau indeks kemakmuran) di masa yang akan datang #cite(<s7>).
 
 == Batasan Masalah / Ruang Lingkup
 

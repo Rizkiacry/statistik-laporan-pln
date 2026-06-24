@@ -57,6 +57,8 @@
   ]
 ]
 #show figure: set block(breakable: true)
+#show figure.where(kind: "tabel"): set block(breakable: false)
+#show figure.where(kind: table): set block(breakable: false)
 #show figure.where(
   kind: "tabel"
 ): set figure.caption(position: top)

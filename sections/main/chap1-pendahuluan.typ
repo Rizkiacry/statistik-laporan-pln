@@ -27,15 +27,15 @@ Hasil dari penelitian ini diharapkan dapat memberikan kegunaan dan manfaat yang 
 Dapat digunakan sebagai bahan pertimbangan, evaluasi, serta masukan ilmiah dalam membaca tren pertumbuhan pelanggan secara kuantitatif. Hasil peramalan ini juga diharapkan bisa membantu pihak manajemen dalam:
 + Merencanakan pengembangan infrastruktur kelistrikan (gardu distribusi, jaringan transmisi) yang tepat waktu dan tepat sasaran.
 + Meningkatkan mutu pelayanan operasional melalui antisipasi kepadatan pelanggan di wilayah tertentu.
-+ Mengambil kebijakan strategis terkait alokasi anggaran, pengadaan material, dan penambahan personel di masa mendatang agar sejalan dengan laju pertumbuhan jumlah pelanggan yang diproyeksikan #cite(<s6>).
++ Mengambil kebijakan strategis terkait alokasi anggaran, pengadaan material, dan penambahan personel di masa mendatang agar sejalan dengan laju pertumbuhan jumlah pelanggan yang diproyeksikan.
 
 === Bagi Peneliti (Mahasiswa)
 
-Sebagai sarana untuk mengaplikasikan ilmu statistika yang telah dipelajari di bangku perkuliahan, khususnya mengenai konsep Statistik Deskriptif, Distribusi Frekuensi, dan analisis Regresi Linear Non-Linear (Parabola) pada kasus nyata di dunia industri. Selain itu, penelitian ini juga bermanfaat untuk melatih kemampuan berpikir kritis dalam menganalisis serta menginterpretasikan data riil lapangan, serta memahami tantangan nyata dalam implementasi metode kuantitatif untuk pengambilan keputusan bisnis #cite(<s6>).
+Sebagai sarana untuk mengaplikasikan ilmu statistika yang telah dipelajari di bangku perkuliahan, khususnya mengenai konsep Statistik Deskriptif, Distribusi Frekuensi, dan analisis Regresi Linear Non-Linear (Parabola) pada kasus nyata di dunia industri. Selain itu, penelitian ini juga bermanfaat untuk melatih kemampuan berpikir kritis dalam menganalisis serta menginterpretasikan data riil lapangan, serta memahami tantangan nyata dalam implementasi metode kuantitatif untuk pengambilan keputusan bisnis.
 
 === Bagi Akademisi / Peneliti Selanjutnya
 
-Dapat dijadikan sebagai referensi tambahan atau studi komparatif bagi mahasiswa lainnya yang ingin melakukan penelitian sejenis di bidang _forecasting_ (peramalan) time series, maupun sebagai bahan rujukan untuk mengembangkan prediksi yang lebih kompleks (misalnya dengan menambahkan variabel eksternal seperti PDRB, jumlah penduduk, atau indeks kemakmuran) di masa yang akan datang #cite(<s7>).
+Dapat dijadikan sebagai referensi tambahan atau studi komparatif bagi mahasiswa lainnya yang ingin melakukan penelitian sejenis di bidang _forecasting_ (peramalan) time series, maupun sebagai bahan rujukan untuk mengembangkan prediksi yang lebih kompleks (misalnya dengan menambahkan variabel eksternal seperti PDRB, jumlah penduduk, atau indeks kemakmuran) di masa yang akan datang #cite(<s6>).
 
 == Batasan Masalah / Ruang Lingkup
 

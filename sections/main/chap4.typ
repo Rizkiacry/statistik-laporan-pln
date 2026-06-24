@@ -2,13 +2,13 @@
 
 == Gambaran Umum Objek Penelitian
 
-PT PLN (Persero) Unit Pelaksana Pelayanan Pelanggan (UP3) Merupakan unit organisasi PLN yang bertugas melaksanakan pelayanan pelanggan, pemeliharaan jaringan distribusi, serta operasional kelistrikan di wilayah tertentu. PLN UP3 Malang memiliki wilayah kerja yang meliputi Kota Malang dan sebagian Kabupaten Malang, dengan didukung oleh 13 Unit Layanan Pelanggan (ULP) yang tersebar di berbagai kecamatan termasuk Lawang, Singosari, Kepanjen, Gondanglegi, dan lainnya #cite(<s3>).
+PT PLN (Persero) Unit Pelaksana Pelayanan Pelanggan (UP3) Merupakan unit organisasi PLN yang bertugas melaksanakan pelayanan pelanggan, pemeliharaan jaringan distribusi, serta operasional kelistrikan di wilayah tertentu. PLN UP3 Malang memiliki wilayah kerja yang meliputi Kota Malang dan sebagian Kabupaten Malang, dengan didukung oleh 13 Unit Layanan Pelanggan (ULP) yang tersebar di berbagai kecamatan termasuk Lawang, Singosari, Kepanjen, Gondanglegi, dan lainnya.
 
-Berdasarkan data yang diperoleh, PLN UP3 Malang melayani lebih dari 1,4 juta pelanggan aktif per Desember 2025, dengan komposisi dominan dari golongan tarif Rumah Tangga (R) yang mencapai sekitar 91\% dari total pelanggan, diikuti oleh golongan Bisnis (B), Industri (I), Sosial (S), dan Publik (P) #cite(<s38>). Pertumbuhan pelanggan di wilayah Malang didorong oleh beberapa faktor makro, antara lain: pertumbuhan penduduk urban sebesar 1,8\% per tahun, pembangunan perumahan baru di kawasan pinggiran kota, ekonomi kreatif dan UMKM yang berkembang pesat, serta kehadiran institusi pendidikan besar (Universitas Brawijaya, Universitas Negeri Malang, UIN Maulana Malik Ibrahim) yang menambah kebutuhan infrastruktur kelistrikan #cite(<s4>).
+Berdasarkan data yang diperoleh, PLN UP3 Malang melayani lebih dari 1,4 juta pelanggan aktif per Desember 2025, dengan komposisi dominan dari golongan tarif Rumah Tangga (R) yang mencapai sekitar 91\% dari total pelanggan, diikuti oleh golongan Bisnis (B), Industri (I), Sosial (S), dan Publik (P). Pertumbuhan pelanggan di wilayah Malang didorong oleh beberapa faktor makro, antara lain: pertumbuhan penduduk urban sebesar 1,8\% per tahun, pembangunan perumahan baru di kawasan pinggiran kota, ekonomi kreatif dan UMKM yang berkembang pesat, serta kehadiran institusi pendidikan besar (Universitas Brawijaya, Universitas Negeri Malang, UIN Maulana Malik Ibrahim) yang menambah kebutuhan infrastruktur kelistrikan.
 
 == Penyajian Data Historis
 
-Data historis yang digunakan dalam penelitian ini merupakan data time series bulanan total jumlah pelanggan PLN UP3 Malang periode Januari 2024 -- Desember 2025 (24 observasi). Data diperoleh langsung dari sistem pencatatan internal PLN dan telah diverifikasi keabsahannya oleh pihak manajemen #cite(<s13>).
+Data historis yang digunakan dalam penelitian ini merupakan data time series bulanan total jumlah pelanggan PLN UP3 Malang periode Januari 2024 -- Desember 2025 (24 observasi). Data diperoleh langsung dari sistem pencatatan internal PLN dan telah diverifikasi keabsahannya oleh pihak manajemen.
 
 #figure(
   table(
@@ -43,15 +43,15 @@ Data historis yang digunakan dalam penelitian ini merupakan data time series bul
   caption: [Data Historis Jumlah Pelanggan PLN UP3 Malang (2024-2025)]
 )
 
-_Sumber: Data Internal PLN UP3 Malang #cite(<s13>), telah diolah_
+_Sumber: Data Internal PLN UP3 Malang, telah diolah_
 
 *Keterangan:* Terdapat penurunan nominal pada Desember 2025 yang disebabkan oleh pembersihan data administratif (_data cleansing_) pelanggan non-aktif, bukan penurunan aktual. Untuk keperluan analisis regresi, nilai Desember 2025 disesuaikan menjadi 1.432.183 (proyeksi linear dari tren Nov 2025) agar konsistensi model tetap terjaga.
 
-Dari Tabel 4.1 terlihat bahwa jumlah pelanggan PLN UP3 Malang mengalami tren pertumbuhan yang konsisten positif selama periode 24 bulan, dengan rata-rata pertumbuhan bulanan sekitar 4.000-4.500 pelanggan baru per bulan. Pertumbuhan tertinggi terjadi pada bulan September 2024 (5.630 pelanggan) yang kemungkinan dipicu oleh program promosi pasang baru menjelang akhir tahun anggaran pemerintah daerah #cite(<s39>).
+Dari Tabel 4.1 terlihat bahwa jumlah pelanggan PLN UP3 Malang mengalami tren pertumbuhan yang konsisten positif selama periode 24 bulan, dengan rata-rata pertumbuhan bulanan sekitar 4.000-4.500 pelanggan baru per bulan. Pertumbuhan tertinggi terjadi pada bulan September 2024 (5.630 pelanggan) yang kemungkinan dipicu oleh program promosi pasang baru menjelang akhir tahun anggaran pemerintah daerah.
 
 == Hasil Statistik Deskriptif
 
-Berdasarkan perhitungan menggunakan software Python dan verifikasi manual, diperoleh hasil statistik deskriptif sebagai berikut #cite(<s40>):
+Berdasarkan perhitungan menggunakan software Python dan verifikasi manual, diperoleh hasil statistik deskriptif sebagai berikut:
 
 #figure(
   table(
@@ -71,15 +71,15 @@ Berdasarkan perhitungan menggunakan software Python dan verifikasi manual, diper
 )
 
 *Analisis:*
-- Nilai mean dan median yang sangat dekat (selisih hanya 446 pelanggan atau 0,03\%) menunjukkan bahwa sebaran data cenderung simetris (*symmetric distribution*) dan tidak memiliki *skewness* yang signifikan. Ini mengindikasikan bahwa pertumbuhan pelanggan berlangsung relatif stabil tanpa lonjakan atau penurunan ekstrem yang tidak wajar #cite(<s41>).
-- Standar deviasi yang relatif kecil (hanya 2,2\% dari mean) menunjukkan bahwa fluktuasi data bulanan tidak terlalu liar dan mengikuti pola yang cukup teratur, yang mendukung penggunaan model regresi deterministik seperti tren parabola #cite(<s42>).
-- Modus yang jatuh pada kelas terendah (semester 1 2024) menunjukkan bahwa data memang bersifat monoton naik, di mana nilai-nilai awal periode memiliki probabilitas kemunculan lebih tinggi dalam pengelompokan interval #cite(<s43>).
+- Nilai mean dan median yang sangat dekat (selisih hanya 446 pelanggan atau 0,03\%) menunjukkan bahwa sebaran data cenderung simetris (*symmetric distribution*) dan tidak memiliki *skewness* yang signifikan. Ini mengindikasikan bahwa pertumbuhan pelanggan berlangsung relatif stabil tanpa lonjakan atau penurunan ekstrem yang tidak wajar.
+- Standar deviasi yang relatif kecil (hanya 2,2\% dari mean) menunjukkan bahwa fluktuasi data bulanan tidak terlalu liar dan mengikuti pola yang cukup teratur, yang mendukung penggunaan model regresi deterministik seperti tren parabola.
+- Modus yang jatuh pada kelas terendah (semester 1 2024) menunjukkan bahwa data memang bersifat monoton naik, di mana nilai-nilai awal periode memiliki probabilitas kemunculan lebih tinggi dalam pengelompokan interval.
 
 == Hasil Analisis Regresi Tren Parabola
 
 === Komponen Perhitungan Regresi
 
-Untuk membentuk model regresi tren parabola, pertama-tama dilakukan kode waktu simetris ($X$) dengan $sum X = 0$. Karena jumlah data genap ($n=24$), maka nilai $X$ berupa setengah bilangan bulat: -11,5; -10,5; ...; -0,5; 0,5; ...; 11,5 #cite(<s44>).
+Untuk membentuk model regresi tren parabola, pertama-tama dilakukan kode waktu simetris ($X$) dengan $sum X = 0$. Karena jumlah data genap ($n=24$), maka nilai $X$ berupa setengah bilangan bulat: -11,5; -10,5; ...; -0,5; 0,5; ...; 11,5.
 
 #figure(
   table(
@@ -99,7 +99,7 @@ Untuk membentuk model regresi tren parabola, pertama-tama dilakukan kode waktu s
 
 === Estimasi Parameter Model
 
-Menggunakan rumus OLS untuk regresi parabola (Bagian 2.6), diperoleh hasil estimasi parameter sebagai berikut #cite(<s45>):
+Menggunakan rumus OLS untuk regresi parabola (Bagian 2.6), diperoleh hasil estimasi parameter sebagai berikut:
 
 #figure(
   table(
@@ -115,29 +115,29 @@ Menggunakan rumus OLS untuk regresi parabola (Bagian 2.6), diperoleh hasil estim
 
 === Persamaan Model Regresi
 
-Berdasarkan parameter yang telah dihitung, diperoleh *persamaan model Regresi Tren Parabola* untuk data jumlah pelanggan PLN UP3 Malang sebagai berikut #cite(<s46>):
+Berdasarkan parameter yang telah dihitung, diperoleh *persamaan model Regresi Tren Parabola* untuk data jumlah pelanggan PLN UP3 Malang sebagai berikut:
 
 $ hat(Y) = 1.380.023,32 + 4.298,95 X + 0,4917 X^2 $
 
 *Interpretasi Model:*
-+ *Konstanta ($a = 1.380.023,32$):* Pada titik tengah periode observasi (antara Desember 2024 dan Januari 2025, di mana $X=0$), estimasi jumlah pelanggan PLN UP3 Malang adalah sekitar *1,38 juta pelanggan*. Nilai ini sangat mendekati rata-rata aktual (1.380.047), yang memvalidasi keakuratan model #cite(<s47>).
-+ *Koefisien Linear ($b = 4.298,95$):* Setiap kenaikan 1 satuan waktu (1 bulan), jumlah pelanggan akan meningkat rata-rata sebesar *4.299 pelanggan* secara linear. Nilai positif mengkonfirmasi tren pertumbuhan yang konsisten naik #cite(<s48>).
-+ *Koefisien Kuadratik ($c = 0,4917$):* Nilai positif (meskipun kecil) menunjukkan bahwa kurva parabola *terbuka ke atas* (*convex*), yang berarti laju pertumbuhan pelanggan cenderung *sedikit meningkat* (*accelerating growth*) seiring berjalannya waktu. Hal ini masuk akal karena efek dari digitalisasi pelayanan PLN Mobile dan program-program promosi pasang baru yang semakin agresif di tahun 2025 #cite(<s49>).
++ *Konstanta ($a = 1.380.023,32$):* Pada titik tengah periode observasi (antara Desember 2024 dan Januari 2025, di mana $X=0$), estimasi jumlah pelanggan PLN UP3 Malang adalah sekitar *1,38 juta pelanggan*. Nilai ini sangat mendekati rata-rata aktual (1.380.047), yang memvalidasi keakuratan model.
++ *Koefisien Linear ($b = 4.298,95$):* Setiap kenaikan 1 satuan waktu (1 bulan), jumlah pelanggan akan meningkat rata-rata sebesar *4.299 pelanggan* secara linear. Nilai positif mengkonfirmasi tren pertumbuhan yang konsisten naik.
++ *Koefisien Kuadratik ($c = 0,4917$):* Nilai positif (meskipun kecil) menunjukkan bahwa kurva parabola *terbuka ke atas* (*convex*), yang berarti laju pertumbuhan pelanggan cenderung *sedikit meningkat* (*accelerating growth*) seiring berjalannya waktu. Hal ini masuk akal karena efek dari digitalisasi pelayanan PLN Mobile dan program-program promosi pasang baru yang semakin agresif di tahun 2025.
 
 === Pengujian Kecocokan Model (Koefisien Determinasi $R^2$)
 
-Untuk mengukur seberapa baik model regresi parabola menjelaskan variasi data historis, dihitung nilai Koefisien Determinasi ($R^2$) #cite(<s50>):
+Untuk mengukur seberapa baik model regresi parabola menjelaskan variasi data historis, dihitung nilai Koefisien Determinasi ($R^2$):
 
 $ R^2 = 1 - (sum (Y_i - hat(Y)_i)^2) / (sum (Y_i - bar(Y))^2) = 0,9966 "atau" bold("99,66%") $
 
 *Interpretasi:*
 - Nilai $R^2 = 99,66$\% menunjukkan bahwa *model regresi tren parabola yang dibentuk mampu menjelaskan 99,66\% variasi atau perubahan jumlah pelanggan PLN UP3 Malang* selama periode 2024-2025.
-- Hanya *0,34\%* variasi data yang tidak dapat dijelaskan oleh model, yang kemungkinan disebabkan oleh faktor-faktor stokastik musiman (seperti jumlah hari kerja per bulan, libur nasional, atau kampanye promosi spesifik) #cite(<s51>).
-- Nilai $R^2$ yang sangat tinggi ini (>0,99) mengindikasikan bahwa model memiliki *tingkat kecocokan (*goodness of fit*) yang excellent* dan sangat layak digunakan untuk keperluan peramalan jangka pendek-menengah (1-2 tahun ke depan) #cite(<s11>).
+- Hanya *0,34\%* variasi data yang tidak dapat dijelaskan oleh model, yang kemungkinan disebabkan oleh faktor-faktor stokastik musiman (seperti jumlah hari kerja per bulan, libur nasional, atau kampanye promosi spesifik).
+- Nilai $R^2$ yang sangat tinggi ini (>0,99) mengindikasikan bahwa model memiliki *tingkat kecocokan (*goodness of fit*) yang excellent* dan sangat layak digunakan untuk keperluan peramalan jangka pendek-menengah (1-2 tahun ke depan).
 
 *Perbandingan Nilai Aktual vs Prediksi Model:*
 
-Untuk memvisualisasikan keakuratan model, berikut perbandingan nilai aktual ($Y$) dengan nilai prediksi model ($hat(Y)$) untuk beberapa periode representatif #cite(<s52>):
+Untuk memvisualisasikan keakuratan model, berikut perbandingan nilai aktual ($Y$) dengan nilai prediksi model ($hat(Y)$) untuk beberapa periode representatif:
 
 #figure(
   table(
@@ -153,11 +153,11 @@ Untuk memvisualisasikan keakuratan model, berikut perbandingan nilai aktual ($Y$
   caption: [Perbandingan Nilai Aktual vs Prediksi Model]
 )
 
-Dari tabel terlihat bahwa error prediksi sangat kecil (di bawah 0,1\% untuk sebagian besar periode), yang memperkuat keyakinan terhadap reliabilitas model #cite(<s53>).
+Dari tabel terlihat bahwa error prediksi sangat kecil (di bawah 0,1\% untuk sebagian besar periode), yang memperkuat keyakinan terhadap reliabilitas model.
 
 == Hasil Peramalan Tahun 2026
 
-Menggunakan model persamaan regresi parabola yang telah divalidasi ($hat(Y) = 1.380.023,32 + 4.298,95 X + 0,4917 X^2$), dilakukan peramalan jumlah pelanggan untuk periode Januari -- Desember 2026. Untuk tahun 2026, nilai $X$ dilanjutkan dari kode waktu sebelumnya: dimulai dari $X = 12,5$ (Januari 2026) hingga $X = 23,5$ (Desember 2026) #cite(<s54>).
+Menggunakan model persamaan regresi parabola yang telah divalidasi ($hat(Y) = 1.380.023,32 + 4.298,95 X + 0,4917 X^2$), dilakukan peramalan jumlah pelanggan untuk periode Januari -- Desember 2026. Untuk tahun 2026, nilai $X$ dilanjutkan dari kode waktu sebelumnya: dimulai dari $X = 12,5$ (Januari 2026) hingga $X = 23,5$ (Desember 2026).
 
 #figure(
   table(
@@ -183,56 +183,56 @@ Menggunakan model persamaan regresi parabola yang telah divalidasi ($hat(Y) = 1.
 *Ringkasan Hasil Peramalan:*
 - *Proyeksi Jumlah Pelanggan Akhir 2026:* *1.481.320 pelanggan* (naik 3,64\% dari Des 2025)
 - *Total Pertumbuhan Tahun 2026:* *51.795 pelanggan baru* (rata-rata *4.316 pelanggan/bulan*)
-- *Laju Pertumbuhan:* Model memprediksi bahwa laju pertumbuhan bulanan akan sedikit meningkat dari ~4.300 di awal 2026 menjadi ~4.320 di akhir 2026, konsisten dengan nilai koefisien kuadratik positif ($c=0,4917$) #cite(<s55>)
+- *Laju Pertumbuhan:* Model memprediksi bahwa laju pertumbuhan bulanan akan sedikit meningkat dari ~4.300 di awal 2026 menjadi ~4.320 di akhir 2026, konsisten dengan nilai koefisien kuadratik positif ($c=0,4917$)
 
 == Pembahasan Komprehensif
 
 === Analisis Pola Pertumbuhan Pelanggan
 
 Berdasarkan hasil analisis, pola pertumbuhan jumlah pelanggan PLN UP3 Malang menunjukkan karakteristik *tren non-linear dengan percepatan positif yang rendah* (_low-acceleration convex curve_). Hal ini ditandai dengan:
-+ *Arah Tren Positif:* Koefisien linear ($b$) bernilai positif (4.298,95), mengkonfirmasi bahwa jumlah pelanggan terus bertambah setiap bulannya tanpa penurunan #cite(<s56>).
-+ *Percepatan Pertumbuhan:* Koefisien kuadratik ($c$) bernilai positif kecil (0,4917), menunjukkan bahwa laju pertumbuhan tidak konstan melainkan sedikit meningkat seiring waktu. Artinya, setiap bulannya PLN UP3 Malang berhasil menambah pelanggan baru sedikit lebih banyak dibanding bulan sebelumnya #cite(<s57>).
-+ *Stabilitas Tinggi:* Nilai $R^2$ yang mendekati sempurna (99,66\%) menunjukkan bahwa pertumbuhan pelanggan sangat teratur dan dapat diprediksi dengan tingkat akurasi tinggi, yang mengindikasikan bahwa pasar listrik di wilayah Malang masih memiliki ruang pertumbuhan yang signifikan dan belum jenuh (*market saturation* belum tercapai) #cite(<s58>).
++ *Arah Tren Positif:* Koefisien linear ($b$) bernilai positif (4.298,95), mengkonfirmasi bahwa jumlah pelanggan terus bertambah setiap bulannya tanpa penurunan.
++ *Percepatan Pertumbuhan:* Koefisien kuadratik ($c$) bernilai positif kecil (0,4917), menunjukkan bahwa laju pertumbuhan tidak konstan melainkan sedikit meningkat seiring waktu. Artinya, setiap bulannya PLN UP3 Malang berhasil menambah pelanggan baru sedikit lebih banyak dibanding bulan sebelumnya.
++ *Stabilitas Tinggi:* Nilai $R^2$ yang mendekati sempurna (99,66\%) menunjukkan bahwa pertumbuhan pelanggan sangat teratur dan dapat diprediksi dengan tingkat akurasi tinggi, yang mengindikasikan bahwa pasar listrik di wilayah Malang masih memiliki ruang pertumbuhan yang signifikan dan belum jenuh (*market saturation* belum tercapai).
 
 === Faktor-Faktor yang Mempengaruhi Pertumbuhan
 
-Berdasarkan hasil wawancara dengan narasumber PLN dan data sekunder, beberapa faktor yang mendorong pertumbuhan pelanggan sesuai dengan pola yang terdeteksi oleh model meliputi #cite(<s12>) #cite(<s59>):
+Berdasarkan hasil wawancara dengan narasumber PLN dan data sekunder, beberapa faktor yang mendorong pertumbuhan pelanggan sesuai dengan pola yang terdeteksi oleh model meliputi:
 
 + *Faktor Demografi:*
   - Pertumbuhan penduduk urban Kota Malang sebesar 1,8\% per tahun yang mendorong kebutuhan hunian baru.
   - Urbanisasi dari kabupaten sekitar ke Kota Malang untuk keperluan pendidikan dan pekerjaan.
-  - Peningkatan jumlah kepala keluarga muda (_young families_) yang membutuhkan sambungan listrik baru #cite(<s60>).
+  - Peningkatan jumlah kepala keluarga muda (_young families_) yang membutuhkan sambungan listrik baru.
 + *Faktor Ekonomi:*
   - Pertumbuhan ekonomi daerah Malang Raya sebesar 5,2\% (year-on-year) yang mendorong pembukaan usaha baru (UMKM, ritel, kuliner).
   - Pengembangan kawasan industri baru dan perluasan pabrik existing yang membutuhkan daya listrik lebih besar.
-  - Program pemerintah terkait bantuan listrik untuk rumah tangga miskin yang memperluas basis pelanggan #cite(<s61>).
+  - Program pemerintah terkait bantuan listrik untuk rumah tangga miskin yang memperluas basis pelanggan.
 + *Faktor Teknologi & Operasional PLN:*
   - Digitalisasi pelayanan melalui aplikasi PLN Mobile yang mempermudah proses pasang baru (target kurang dari 3 hari kerja).
   - Strategi pemasaran proaktif ("jemput bola") oleh petugas lapangan yang mengidentifikasi proyek pembangunan sejak dini.
-  - Program insentif tambah daya gratis atau diskon Biaya Penyambungan (BP) 50\% yang mendorong pelanggan existing untuk upgrade #cite(<s62>).
+  - Program insentif tambah daya gratis atau diskon Biaya Penyambungan (BP) 50\% yang mendorong pelanggan existing untuk upgrade.
 + *Faktor Kebijakan:*
   - Sinergi dengan pemerintah daerah dalam program electrification rural untuk desa-desa yang belum terlistriki.
-  - Kemudahan perizinan dan standardisasi prosedur sambungan baru yang memangkas birokrasi #cite(<s63>).
+  - Kemudahan perizinan dan standardisasi prosedur sambungan baru yang memangkas birokrasi.
 
 === Implikasi Strategis bagi PLN UP3 Malang
 
-Hasil peramalan ini memiliki beberapa implikasi penting bagi perencanaan strategis PLN UP3 Malang #cite(<s64>):
+Hasil peramalan ini memiliki beberapa implikasi penting bagi perencanaan strategis PLN UP3 Malang:
 
 + *Perencanaan Infrastruktur:*
   - Dengan proyeksi tambahan ~52.000 pelanggan baru di tahun 2026, PLN perlu menyiapkan kapasitas gardu distribusi tambahan sebesar minimal 150-200 MVA (dengan asumsi rata-rata daya 3.000 VA/pelanggan).
-  - Perlu dilakukan penguatan jaringan tegangan rendah (JTR) di kawasan dengan pertumbuhan tertinggi seperti Kecamatan Lowokwaru, Sukun, dan Kedungkandang #cite(<s65>).
+  - Perlu dilakukan penguatan jaringan tegangan rendah (JTR) di kawasan dengan pertumbuhan tertinggi seperti Kecamatan Lowokwaru, Sukun, dan Kedungkandang.
 + *Perencanaan SDM:*
   - Pertumbuhan pelanggan 4.000+/bulan membutuhkan penambahan personel teknis (teknisi jaringan) dan admin pelayanan minimal 10-15 orang untuk menjaga rasio optimal.
-  - Perlu peningkatan kapasitas call center dan customer service untuk mengantisipasi volume keluhan yang meningkat #cite(<s66>).
+  - Perlu peningkatan kapasitas call center dan customer service untuk mengantisipasi volume keluhan yang meningkat.
 + *Perencanaan Finansial:*
   - Proyeksi pertumbuhan pelanggan dapat dijadikan dasar untuk menyusun anggaran belanja modal (_capital expenditure_/_Capex_) tahun 2026-2027.
-  - Estimasi peningkatan pendapatan dari tambahan pelanggan (dengan asumsi rata-rata penggunaan 100 kWh/bulan dan tarif Rp1.500/kWh) mencapai potensi tambahan omset Rp9,3 miliar per tahun #cite(<s67>).
+  - Estimasi peningkatan pendapatan dari tambahan pelanggan (dengan asumsi rata-rata penggunaan 100 kWh/bulan dan tarif Rp1.500/kWh) mencapai potensi tambahan omset Rp9,3 miliar per tahun.
 + *Mitigasi Risiko:*
-  - Meskipun model menunjukkan tren positif, perlu disiapkan skenario kontingensi jika pertumbuhan melampaui proyeksi (misalnya karena proyek investasi besar yang masuk ke Malang) atau melambat tajam (misalnya karena resesi ekonomi) #cite(<s68>).
+  - Meskipun model menunjukkan tren positif, perlu disiapkan skenario kontingensi jika pertumbuhan melampaui proyeksi (misalnya karena proyek investasi besar yang masuk ke Malang) atau melambat tajam (misalnya karena resesi ekonomi).
 
 === Keterbatasan Model dan Saran Pengembangan
 
-Meskipun model regresi parabola menunjukkan performa sangat baik ($R^2=99,66$\% ), perlu dicatat beberapa keterbatasan #cite(<s69>):
+Meskipun model regresi parabola menunjukkan performa sangat baik ($R^2=99,66$\% ), perlu dicatat beberapa keterbatasan:
 + *Model Univariat:* Hanya menggunakan variabel waktu sebagai prediktor, sehingga tidak menangkap pengaruh faktor eksternal seperti kondisi ekonomi makro, kebijakan pemerintah, atau bencana alam.
 + *Asumsi Linearitas Parameter:* Model mengasumsikan bahwa pola parabola akan terus berlanjut di masa depan, padahal dalam jangka panjang pertumbuhan pasti akan melambat mendekati batas jenuh pasar (*carrying capacity*).
 + *Tidak Memperhitungkan Musiman:* Model tidak membedakan pola musiman (misalnya pertumbuhan lebih tinggi di akhir tahun karena program pemerintah).

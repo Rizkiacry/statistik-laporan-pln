@@ -41,9 +41,9 @@
 ,,-10,=C41^2,=C41^4,=C41*F9,=D41*F9,,,a,=((B39*E63)-(G63*D63))/(24*E63-D63^2),,
 ,,-9,=C42^2,=C42^4,=C42*F10,=D42*F10,,,c,=((24*G63)-(D63*B39))/(24*E63-D63^2),,
 ,,-8,=C43^2,=C43^4,=C43*F11,=D43*F11,,,persamaan tren parabola ,,,
-,,-7,=C44^2,=C44^4,=C44*F12,=D44*F12,,,"Y = 1,377,473.99 + 3,711.09 (X) - 1.68 (X^2)",,,"jumlah pelanggan cenderung naik, tapi pola kenaikan sedikit melambat"
+,,-7,=C44^2,=C44^4,=C44*F12,=D44*F12,,,"Y = 1,377,448.24 + 3,949.04 (X) - 1.36 (X^2)",,,"jumlah pelanggan cenderung naik, tapi pola kenaikan sedikit melambat (deselerasi)"
 ,,-6,=C45^2,=C45^4,=C45*F13,=D45*F13,,,,,,
-,,-5,=C46^2,=C46^4,=C46*F14,=D46*F14,,,rata-rata pertumbuhan pelanggan ,,=G31/24,
+,,-5,=C46^2,=C46^4,=C46*F14,=D46*F14,,,rata-rata pertumbuhan pelanggan ,,=G31/23,
 ,,-4,=C47^2,=C47^4,=C47*F15,=D47*F15,,,,,,
 ,,-3,=C48^2,=C48^4,=C48*F16,=D48*F16,,,,,,
 ,,-2,=C49^2,=C49^4,=C49*F17,=D49*F17,,,,,,
@@ -68,8 +68,8 @@
 ,=B39/24,=$K$41+$K$40*C39-$K$42*D39,=F7-C68,=D68^2,=F7-$B$68,=F68^2,,,,,,
 ,,=$K$41+$K$40*C40-$K$42*D40,=F8-C69,=D69^2,=F8-$B$68,=F69^2,,R^2,=1-(E92/G92),,,
 ,,=$K$41+$K$40*C41-$K$42*D41,=F9-C70,=D70^2,=F9-$B$68,=F70^2,,,,,,
-,,=$K$41+$K$40*C42-$K$42*D42,=F10-C71,=D71^2,=F10-$B$68,=F71^2,,,"model tren parabola mampu menjelaskan 99.63% variasi jumlah pelanggan,",,,
-,,=$K$41+$K$40*C43-$K$42*D43,=F11-C72,=D72^2,=F11-$B$68,=F72^2,,,sedangkan sisanya (0.37%) dipengaruhi oleh faktor lain di luar model.,,,
+,,=$K$41+$K$40*C42-$K$42*D42,=F10-C71,=D71^2,=F10-$B$68,=F71^2,,,"model tren parabola mampu menjelaskan 99.80% variasi jumlah pelanggan,",,,
+,,=$K$41+$K$40*C43-$K$42*D43,=F11-C72,=D72^2,=F11-$B$68,=F72^2,,,sedangkan sisanya (0.20%) dipengaruhi oleh faktor lain di luar model.,,,
 ,,=$K$41+$K$40*C44-$K$42*D44,=F12-C73,=D73^2,=F12-$B$68,=F73^2,,,memiliki kecocokan yang sangat tinggi dalam menggambarkan pertumbuhan jumlah pelanggan.,,,
 ,,=$K$41+$K$40*C45-$K$42*D45,=F13-C74,=D74^2,=F13-$B$68,=F74^2,,,,,,
 ,,=$K$41+$K$40*C46-$K$42*D46,=F14-C75,=D75^2,=F14-$B$68,=F75^2,,,,,,

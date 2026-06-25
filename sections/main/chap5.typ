@@ -4,15 +4,15 @@
 
 Berdasarkan hasil analisis dan pembahasan yang telah diuraikan, dapat ditarik kesimpulan sebagai berikut:
 
-+ *Tren Pertumbuhan Pelanggan:* Jumlah pelanggan PT PLN (Persero) UP3 Malang periode Januari 2024 -- Desember 2025 menunjukkan *tren pertumbuhan positif yang konsisten dan stabil*, dengan rata-rata pertumbuhan bulanan sebesar 3.926 pelanggan. Pertumbuhan total selama 24 bulan mencapai *90.297 pelanggan* (naik 6,77\% dari awal periode).
++ *Tren Pertumbuhan Pelanggan:* Jumlah pelanggan PT PLN (Persero) UP3 Malang periode Januari 2024 -- Desember 2025 menunjukkan *tren pertumbuhan positif yang konsisten dan stabil*, dengan rata-rata pertumbuhan bulanan sebesar 3.762 pelanggan. Pertumbuhan total selama 24 bulan mencapai *90.297 pelanggan* (naik 6,77\% dari awal periode).
 
 + *Model Regresi Tren Parabola:* Model regresi tren parabola yang terbentuk memiliki persamaan:
 
-  $ hat(Y) = 1.377.448,24 + 3.949,04 X - 1,3589 X^2 $
+  $ hat(Y) = 1.377.473,99 + 3.711,09 X - 1,68 X^2 $
 
-  dengan nilai *Koefisien Determinasi ($R^2$) = 0,9980 (99,80\%)*, yang menunjukkan bahwa model memiliki kemampuan prediksi yang sangat excellent dan sangat layak digunakan untuk peramalan jangka pendek-menengah.
+  dengan nilai *Koefisien Determinasi ($R^2$) = 0,9963 (99,63\%)*, yang menunjukkan bahwa model memiliki kemampuan prediksi yang sangat baik dan layak digunakan untuk peramalan jangka pendek-menengah.
 
-+ *Hasil Peramalan 2026:* Proyeksi jumlah pelanggan PLN UP3 Malang untuk tahun 2026 menunjukkan *pertumbuhan terus menerus* dengan estimasi mencapai *1.469.500 pelanggan* pada Desember 2026. Total pertumbuhan tahunan diproyeksikan sebesar *45.441 pelanggan* (rata-rata *3.787 pelanggan/bulan*) dengan kecenderungan laju pertumbuhan yang sedikit menurun (*decelerating growth*), yang mengindikasikan pasar mulai mendekati titik jenuh.
++ *Hasil Peramalan 2026:* Proyeksi jumlah pelanggan PLN UP3 Malang untuk tahun 2026 menunjukkan *pertumbuhan terus menerus* dengan estimasi mencapai *1.465.574 pelanggan* pada Desember 2026. Total pertumbuhan tahunan diproyeksikan sebesar *41.515 pelanggan* (rata-rata *3.460 pelanggan/bulan*) dengan kecenderungan laju pertumbuhan yang sedikit menurun (*decelerating growth*), yang mengindikasikan pasar mulai mendekati titik jenuh.
 
 + *Implikasi Manajerial:* Hasil penelitian ini memberikan dasar kuantitatif yang kuat bagi manajemen PLN UP3 Malang untuk melakukan *perencanaan infrastruktur, alokasi SDM, dan penyusunan anggaran* yang lebih akurat dan berbasis data (*data-driven decision making*).
 
